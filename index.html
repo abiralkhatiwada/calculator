@@ -8,29 +8,29 @@
 </head>
 <body>
     <div class="box">
-        <div id="display"></div>
+        <input type="text" id="display" readonly>
         <div class="button">
-            <button class="digit" onclick="getNum(7);">7</button>
-            <button class="digit" onclick="getNum(8);">8</button>
-            <button class="digit" onclick="getNum(9);">9</button>
+            <button class="digit" onclick="getNum('7');">7</button>
+            <button class="digit" onclick="getNum('8');">8</button>
+            <button class="digit" onclick="getNum('9');">9</button>
 
-            <button class="digit" onclick="getNum(9);">C</button>
+            <button class="digit" onclick="clearDisplay();">C</button>
 
-            <button class="digit" onclick="getNum(4);">4</button>
-            <button class="digit" onclick="getNum(5);">5</button>
-            <button class="digit" onclick="getNum(6);">6</button>
+            <button class="digit" onclick="getNum('4');">4</button>
+            <button class="digit" onclick="getNum('5');">5</button>
+            <button class="digit" onclick="getNum('6');">6</button>
 
-            <button class="digit" onclick="getNum(9);">-</button>
+            <button class="digit" onclick="getNum('9');">-</button>
 
-            <button class="digit" onclick="getNum(1);">1</button>
-            <button class="digit" onclick="getNum(2);">2</button>
-            <button class="digit" onclick="getNum(3);">3</button>
+            <button class="digit" onclick="getNum('1');">1</button>
+            <button class="digit" onclick="getNum('2');">2</button>
+            <button class="digit" onclick="getNum('3');">3</button>
 
-            <button class="digit" onclick="getNum(9);">+</button>
-            <button class="digit" onclick="getNum(9);">0</button>
-            <button class="digit" onclick="getNum(9);">/</button>
-            <button class="digit" onclick="getNum(9);">*</button>
-            <button class="digit" onclick="getNum(9);">=</button>
+            <button class="digit" onclick="getNum('+');">+</button>
+            <button class="digit" onclick="getNum('0');">0</button>
+            <button class="digit" onclick="getNum('/');">/</button>
+            <button class="digit" onclick="getNum('*');">*</button>
+            <button class="digit" onclick="calculate();">=</button>
         </div>
     </div>
     <script src="script.js"></script>
